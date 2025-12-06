@@ -182,12 +182,16 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .about-img img {
-            width: 100%;
-            height: auto;
-            display: block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            padding: 20px;
         }
 
         .about-text {
@@ -275,6 +279,10 @@
         .portfolio-img {
             height: 250px;
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f5f7fa;
         }
 
         .portfolio-img img {
@@ -290,6 +298,36 @@
 
         .portfolio-info {
             padding: 20px;
+        }
+
+        /* Social Magnifier Image Styling */
+        .social-magnifier-img {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        .social-magnifier-img h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .social-magnifier-img h2:after {
+            display: none;
+        }
+
+        .social-magnifier-img p {
+            font-size: 1.5rem;
+            font-style: italic;
+            color: rgba(255,255,255,0.9);
         }
 
         /* Services Section */
@@ -419,6 +457,10 @@
             h2 {
                 font-size: 2rem;
             }
+            
+            .social-magnifier-img h2 {
+                font-size: 2rem;
+            }
         }
 
         @media (max-width: 768px) {
@@ -465,6 +507,14 @@
             .portfolio-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .social-magnifier-img h2 {
+                font-size: 1.8rem;
+            }
+            
+            .social-magnifier-img p {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
@@ -504,8 +554,12 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-img">
-                    <!-- Placeholder for your image -->
-                    <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Faryal Babar">
+                    <!-- Aesthetic Business/Design Image -->
+                    <div style="padding: 20px;">
+                        <i class="fas fa-chart-line" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                        <h3 style="color: white; margin-bottom: 10px;">Digital Marketing Specialist</h3>
+                        <p style="color: rgba(255,255,255,0.9);">Crafting digital success stories through strategic marketing and creative design</p>
+                    </div>
                 </div>
                 <div class="about-text">
                     <p>I am a passionate digital marketing specialist with expertise in creating compelling social media campaigns, ad creatives, and marketing strategies that deliver results.</p>
@@ -586,10 +640,14 @@
                 <button class="filter-btn" data-filter="strategy">Marketing Strategy</button>
             </div>
             <div class="portfolio-grid">
-                <!-- Portfolio Item 1 -->
+                <!-- Portfolio Item 1 - Social Magnifiers -->
                 <div class="portfolio-item" data-category="social">
                     <div class="portfolio-img">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Social Magnifiers">
+                        <!-- Social Magnifier Image Placeholder with your text -->
+                        <div class="social-magnifier-img" style="width: 100%; height: 100%;">
+                            <h2>SOCIAL MAGNIFIER</h2>
+                            <p>We make you seen</p>
+                        </div>
                     </div>
                     <div class="portfolio-info">
                         <h3>Social Magnifiers</h3>
